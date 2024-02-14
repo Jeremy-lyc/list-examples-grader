@@ -16,7 +16,6 @@ fi
 
 cd grading
 
-
 # what's the classpath argument going to be?
 # /home/list-examples-grader/grader/../lib/*.jar refers to the jars
 CPATH='.:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar'
@@ -36,7 +35,7 @@ lastline=$(cat junit-output.txt | tail -n 2 | head -n 1)
 testline=$(cat junit-output.txt | head -n 4 | tail -n 1)
 if [[ -z $testline ]]
 then
-    echo "Passed"
+    echo "Successfully Passed!"
 else
     tests=$(echo $lastline | awk -F'[, ]' '{print $3}')
     failures=$(echo $lastline | awk -F'[, ]' '{print $6}')
