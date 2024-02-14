@@ -1,0 +1,15 @@
+JUnit version 4.13.2
+.E
+Time: 0.01
+There was 1 failure:
+1) testMergeRightEnd(TestListExamples)
+java.lang.AssertionError: expected:<[a, a, b, c, d]> but was:<[a, b, c, d]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:19)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
